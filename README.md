@@ -13,7 +13,7 @@ This is the small Django project with words with google maps and fusion table.
 
 *To stop: `sh redeploy.sh stop`
 
-####Use case: #### 
+#### Use case: #### 
 * If you click any location on the map: 
     validate that this has a real address and it’s not some wood/mountain/ocean, etc. 
 * If valid: 
