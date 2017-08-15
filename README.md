@@ -1,10 +1,10 @@
-This is the small Django project with words with google maps and fusion table.
+This is the small Django project with works with google maps and fusion table.
 
 ### Installation ###
 **Requirements:** docker and docker-compose.
 
 1) Set env variables:
-* `export FUSION_TABLE_ID='your table id'` Add permission for editing for this user in the `fusiontables.google.com`
+* `export FUSION_TABLE_ID='your table id'` Add permission for editing table for this user in the `fusiontables.google.com`
 * `export KEY_MAP_API='your map api key'`
 
 2) Insert Service Account Credential file with name `ServiceAccountCredentialsFile.json` in the main dir.
