@@ -1,0 +1,16 @@
+{% load staticfiles %}
+
+<script src="{% static 'js/libs/jquery.min.js' %}"></script>
+
+<script>
+    if (typeof $.shpn === 'undefined') {
+        $.shpn = {};
+    }
+    $.shpn.keyMapAPI = '{{ KEY_MAP_API }}';
+</script>
+
+<script src="{% static 'js/libs/underscore-min.js' %}"></script>
+<script src="{% static 'js/libs/backbone-min.js' %}"></script>
+<script src="{% static 'js/libs/backbone-tastypie.js' %}"></script>
+<script src="{% static 'js/libs/backbone-relational.js' %}"></script>
+

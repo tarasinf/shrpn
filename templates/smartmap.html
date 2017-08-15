@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/smartmap.css' %}">
+</head>
+<body>
+{% include "scripts.html" %}
+{% include "_templates/location.html" %}
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/models/location.js' %}"></script>
+<script src="{% static 'js/models/locationColaction.js' %}"></script>
+<script src="{% static 'js/views/smartMap.js' %}"></script>
+<script src="{% static 'js/views/location.js' %}"></script>
+
+<div id="smartMap">
+    <div class="map" id="map"></div>
+    <table>
+        <tr>
+            <th>
+                <button class="btn-reset">Reset</button>
+            </th>
+            <th>
+                Total count:
+                <div class="js-total-count"></div>
+            </th>
+            <th>
+                <div class="js-notification notification"></div>
+            </th>
+        </tr>
+    </table>
+
+    <table class="location-list">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Address</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

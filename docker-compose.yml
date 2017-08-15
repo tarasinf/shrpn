@@ -1,0 +1,10 @@
+django:
+  build: .
+  command: "sh deploy.sh"
+  environment:
+    FUSION_TABLE_ID: "$FUSION_TABLE_ID"
+    KEY_MAP_API: "$KEY_MAP_API"
+  ports:
+   - "80:8000"
+  volumes:
+   - .:/project
